@@ -1,0 +1,150 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(120deg,#3c93b9,#1d6135,#382c64);
+min-height:100vh;
+color:rgb(0, 1, 1);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero span{
+  color:#38bdf8;
+}
+/* GLASS EFFECT */
+.glass{
+background:rgba(35, 223, 157, 0.568);
+backdrop-filter:blur(14px);
+border:3px solid rgba(26, 212, 20, 0.719);
+border-radius:20px;
+box-shadow:0 0 40px rgba(0,255,255,0.15);
+}
+
+
+/* APP LAYOUT */
+#app{
+display:none;
+width:100%;
+max-width:1200px;
+height:90vh;
+display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+width:240px;
+padding:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+.sidebar a{
+text-decoration:none;
+color:rgb(246, 9, 9);
+padding:15px;
+border-radius:20px;
+transition:.3s;
+}
+.sidebar a:hover{
+background:#00f5ff;
+color:rgb(5, 5, 235);
+}
+
+
+/* SECTIONS */
+section{
+  padding:190px 5%;
+  text-align:center;
+}
+
+
+/* MAIN */
+main{
+flex:1;
+padding:100px;
+overflow-y:auto;
+}
+
+.hero{
+text-align:center;
+margin-bottom:60px;
+}
+.profile{
+width:200px;
+height:200px;
+border-radius:50%;
+border:3px solid hsla(2, 100%, 50%, 0.959);
+margin-bottom:15px;
+}
+
+/* PROJECTS */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+gap:15px;
+flex-wrap:fill;
+justify-content:center;
+
+}
+.card{
+background:rgba(35, 8, 207, 0.162);
+padding:10px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+.card:hover{
+transform:scale(1.05);
+}
+.card img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+background:rgba(8, 207, 68, 0.162);
+padding:15px;
+border-radius:15px;
+text-align:fill;
+transition:.3s;
+display:grid;
+gap:20px;
+}
+
+form input,form textarea{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+border:none;
+border-radius:8px;
+}
+form button{
+padding:10px;
+border:none;
+background:#2a0d6d;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* MODAL */
+#modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.8);
+justify-content:center;
+align-items:center;
+}
+#modal img{
+max-width:50%;
+border-radius:20px;
+}
